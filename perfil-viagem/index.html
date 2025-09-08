@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Barra de Navegação</title>
+    <!-- Importação do Tailwind CSS para o exemplo funcionar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Um header para dar contexto à barra de navegação -->
+    <header class="bg-white shadow">
+        <!-- 
+            - w-full: Garante que a nav ocupe 100% da largura do seu contentor (o header).
+            - flex: Ativa o layout flexível.
+            - justify-between: É a classe CHAVE. Empurra o primeiro item (logo) para o início (esquerda) 
+              e o último item (menu) para o fim (direita).
+            - items-center: Alinha os itens verticalmente ao centro.
+            - p-4: Adiciona um espaçamento interno para não ficar colado nas bordas.
+        -->
+        <nav id="navBar" class="container mx-auto flex w-full items-center justify-between p-4">
+            
+            <!-- Bloco da Esquerda (Logotipo) -->
+            <a href="/" class="flex items-center gap-3">
+                <!-- Usando uma imagem de placeholder para o exemplo -->
+                <img src="./src/assets/GlobeHemisphereWest.png" alt="Logotipo Travelgram" class="rounded-full">
+                <span class="text-2xl font-bold text-gray-800">Travelgram</span>
+            </a>
+
+            <!-- Bloco da Direita (Menu de Navegação) -->
+            <ul class="flex items-center gap-6 text-gray-600">
+                <li>
+                    <a href="#" aria-label="Pesquisar">
+                        <!-- Ícone de placeholder -->
+                        <img src="./src/assets/search-icon.svg" alt="Ícone de pesquisa">
+                    </a>
+                </li>
+                <li><a href="#" class="hover:text-gray-900">Explorar</a></li>
+                <li><a href="#" class="hover:text-gray-900">Viagens</a></li>
+                <li>
+                    <a href="#" aria-label="Ver perfil">
+                        <!-- Imagem de perfil de placeholder -->
+                        <img src="./src/assets/Profile pic.png" alt="Foto de perfil do utilizador" class="rounded-full">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-8">
+        <div class="flex items-center flex-row mb-6">
+          <img src="./src/assets/Profile-big-pic.png ">
+          <div class="pl-4">
+            <h1>Isabela Torres</h1>
+            <a>Amante de viagens, cultura e gastronomia. 🌍✈️ </br> 
+               Aqui compartilho as histórias registradas em cada </br> 
+               clique, explorando cantinhos fascinantes do nosso</br>  
+               planeta a partir da movimentada cidade de São Paulo. 🏙️📸</a>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-between  gap-4">
+          <img src="./src/assets/Image 01.png" class="h-full w-[350px]">
+          <img src="./src/assets/Image 05.png" class="h-full w-[350px]">
+          <img src="./src/assets/Image 06.png" class="h-full w-[350px]">
+          <img src="./src/assets/Image 08.png" class="h-full w-[350px]">
+          <img src="./src/assets/Image 11.png" class="h-full w-[350px]">
+           <img src="./src/assets/Image 06.png" class="h-full w-[350px]">
+          <img src="./src/assets/Image 01.png" class="h-full w-[350px]">
+          <img src="./src/assets/Image 12.png" class="h-full w-[350px]">
+        </div>
+    </main>
+
+</body>
+</html>
